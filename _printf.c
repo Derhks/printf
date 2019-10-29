@@ -27,7 +27,7 @@ void _putdouble(double num)
         var1 = var1 + num;
         if (var1 < 0 && num != min)
         {
-                var1 -= var1 * 1;
+                var1 -= var1 * 2;
                 _write('-');
         }
         if (var1 >= 10 && num != min)
@@ -51,7 +51,7 @@ int _putint(int num)
 
         if (var2 < 0)
         {
-                var2 -= var2 * 1;
+                var2 -= var2 * 2;
                 var1++;
         }
         while (var2 > 10)
@@ -76,6 +76,7 @@ while (format != 0 && format[counter] != '\0')
 {
 	if (format[counter] == '%' && format[counter + 1] != '\0')
 	{
+		counter++;
 		switch (format[counter])
 		{
 		case 'c':
