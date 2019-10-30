@@ -1,0 +1,49 @@
+.\" Manpage for printf.
+.TH printf 3 "29 Oct 2019" "1.0" "printf man page"
+
+.SH NAME
+printf
+
+.SH SYNOPSIS
+.PP
+.B #include <stdio.h>
+.P
+.B #include <stdarg.h>
+.P
+.B #include <limits.h>
+.P
+.B #include "holberton.h"
+
+.SH DESCRIPTION
+The printf() function prints any of the following types of data on the screen:
+.PP
+*Integer
+.PP
+*Double
+.PP
+*chars
+.PP
+*Strings
+
+For the printf() function to print any of these characters, we must use one of
+the following flags:
+.PP
+.B *%i -> to print integers
+.PP
+.B *%d -> to print doubles
+.PP
+.B *%c -> to print chars
+.PP
+.B *%s -> to print strings
+
+The argument that is going to be printed must be in the same order in which the
+flags are declared,
+.PP
+otherwise there will be an error because the data to be
+printed does not coincide with the declared flag.
+
+.SH BUGS
+No known bugs.
+
+.SH AUTHOR
+Carlos Lemus and Julian Sandoval
